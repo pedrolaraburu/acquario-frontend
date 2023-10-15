@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#titulo {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.teste {
+    background-color: #363434;
+    background-image: url('./static/unsplash_EMPZ7yRZoGw.png');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#controle {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-size: 14.636px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.955px; /* 150% */
+    letter-spacing: 0.146px;
+}
