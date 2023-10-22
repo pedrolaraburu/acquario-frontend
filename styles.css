@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
 
 #titulo {
     color: var(--light-text-color, #FFF);
@@ -7,14 +7,15 @@
     font-weight: 800;
 }
 
-.teste {
-    background-color: #363434;
-    background-image: url('./static/unsplash_EMPZ7yRZoGw.png');
+.first-feat {
+    /* background-color: #363434; */
+    background-image: url('./static/background.jpg');
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    height: 60vh;
 }
 
 #controle {
@@ -25,4 +26,81 @@
     font-weight: 500;
     line-height: 21.955px; /* 150% */
     letter-spacing: 0.146px;
+}
+
+.second-half {
+    background-color: rgb(0, 0, 0);
+    /* background-image: url('./static/possessed-photography-U3sOwViXhkY-unsplash.jpg'); */
+    /* background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: white; */
+    height: 40vh;
+}
+
+.text-second-half {
+    color: var(--light-text-color, #FFF);
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#h2-second-half {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 80.008% */
+    letter-spacing: 0.073px; 
+}
+.third-feat {
+    background-color: black;
+}
+
+.fourth-feat {
+    height: 65vh;
+    background-color: black;
+}
+
+.card-title-my {
+    color: #040E14;
+    font-family: Montserrat;
+    /* font-size: 24px; */
+    font-style: normal;
+    font-weight: 700;
+}
+
+.fix-font {
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.header-font {
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.fourth-feat-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main-title {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#first-feat-cards:hover {
+    background-color: #d4d4d4; 
+    transition: background-color 0.3s ease; 
 }

@@ -10,15 +10,16 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <title>Acquario</title>
 </head>
 
 <body>
-    <div class="fuck teste">
+    <div class="first-feat">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand mx-2 ms-5 text-white" href="#">ACQUARIO</a>
+                    <a class="navbar-brand mx-2 ms-5 text-white main-title" href="#">ACQUARIO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -27,62 +28,201 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto gap-4 px-4 ms-5">
                             <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="#">Início</a>
+                                <a class="nav-link header-font text-white" aria-current="page" href="#">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Sobre</a>
+                                <a class="nav-link header-font text-white" href="#">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contato</a>
+                                <a class="nav-link header-font text-white" href="#">Contato</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-auto gap-4 px-4">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Login</a>
+                                <a class="nav-link header-font text-white" href="#">Login</a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn btn-primary rounded-4">Seja Membro</button>
+                                <button class="btn text-white header-font rounded-4 px-3" style="background-color: #27a8c5;">Seja Membro <img src="static/vector_arrow.svg" alt="Seta"></button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="ms-5">
-                <h1 id="titulo" class="mt-5">ACQR</h1>
-                <h4 class="text-white mt-4">Controle, planejamento e investimento. <br>No Acquario você pode tudo.</h4>
-                <div class="row mt-5 mb-5">
-                    <div class="col-2">
-                        <button class="btn btn-primary mr-2">Fazer download</button>
+            <div class="ms-5 ms-lg-5">
+                <h1 id="titulo" class="mt-4">ACQR</h1>
+                <h4 class="text-white mt-3">Controle, planejamento e investimento. <br>No Acquario você pode tudo.</h4>
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                        <button class="btn text-white px-3 py-2 mr-2" style="background-color: #27a8c5;">Fazer download</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-primary ml-2">Saiba mais</button>
+                    <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                        <button class="btn text-white px-3 py-2 ml-2" style="background-color: #27a8c5;">Saiba mais</button>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-md-3 g-3 mt-5">
                     <div class="col">
-                        <div class="card h-100 d-flex flex-column">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center" id="first-feat-cards">
                             <div class="card-body flex-grow-1">
-                                <h5 class="card-title"><img src="static/money_send.svg" alt="Icon Description"></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Planejamento</h6>
-                                <p class="card-text">Faça seu planejamento baseado sem suas preferências</p>
+                                <h5 class="card-title mt-2 mb-3"><img src="static/money_send.svg" alt="Icon Description"></h5>
+                                <h6 class="card-title-my card-subtitle mb-2">Planejamento</h6>
+                                <p class="card-text text-muted fix-font">Faça seu planejamento baseado <br>em suas preferências</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100 d-flex flex-column">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center" id="first-feat-cards">
                             <div class="card-body flex-grow-1">
-                                <h5 class="card-title"><img src="static/wallet.svg" alt="Icon Description"></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Controle de gastos</h6>
-                                <p class="card-text">Tenha total controle sobre seus gastos</p>
+                                <h5 class="card-title mt-2 mb-3"><img src="static/wallet.svg" alt="Icon Description"></h5>
+                                <h6 class="card-title-my card-subtitle mb-2">Controle de gastos</h6>
+                                <p class="card-text text-muted fix-font">Tenha total controle sobre <br>seus gastos</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100 d-flex flex-column">
+                        <div class="card h-100 d-flex flex-column justify-content-center align-items-center" id="first-feat-cards">
                             <div class="card-body flex-grow-1">
-                                <h5 class="card-title"><img src="static/person.svg" alt="Icon Description"></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">IA Assistente</h6>
-                                <p class="card-text">Utilize inteligência artificial para empreender melhor</p>
+                                <h5 class="card-title mt-2 mb-3"><img src="static/person.svg" alt="Icon Description"></h5>
+                                <h6 class="card-title-my card-subtitle mb-2">IA Assistente</h6>
+                                <p class="card-text text-muted fix-font">Utilize inteligência artificial <br>para empreender melhor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="second-half">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center mt-4" id="h2-second-half">IA Assistente</h2>
+                <p class="text-justify mt-3 text-second-half">A inteligência artificial (IA) é usada como assistente<br> de investimentos e controle de metas ao analisar<br> dados financeiros, 
+                    identificar padrões e recomendar<br> estratégias de investimento personalizadas.
+                    Ela<br>automatiza tarefas de pesquisa e monitoramento,<br>
+                    fornecendo informações em tempo real, otimizando<br> a alocação de ativos e ajudando os investidores a<br> alcançar seus objetivos financeiros de maneira<br> eficiente e informada.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="third-feat">
+        <div class="container">
+            <div class="d-flex flex-column jusitfy-content-center align-items-center">
+                <h2 class="text-center mt-4" id="h2-second-half">Melhores estratégias<br> para você</h2>
+                <p class="text-justify text-second-half mt-3">No Acquario você tem muitas opções para cuidar melhor da <br> 
+                    sua vida financeira, desde controle de gastos até dicas de <br> investimentos, planejamentos com metas e auxílio de IA.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-3">
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/person.svg" alt="Icon Description">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Inteligência artificial auxiliar</h5>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted fix-font">Nosso auxiliar inteligente usa IA para te guiar na gestão financeira do melhor modo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/wallet.svg" alt="Icon Description"></h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Gestor automático de ganhos e gastos</h5>
+                                </div>
+                                <p class="card-text text-muted text-center fix-font">Tenha total controle sobre seus ganhos e gastos de forma automátca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/person.svg" alt="Icon Description"></h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Construção de metas feita por IA</h5>
+                                </div>
+                                <p class="card-text text-muted text-center fix-font">IA que te auxilia a chegar e alcançar sua meta de vida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/money_send.svg" alt="Icon Description"></h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Planeje seus gastos de forma fácil</h5>
+                                </div>
+                                <p class="card-text text-muted text-center fix-font">Tenha um planejamento rápido e prático da sua vida financeira sempre na sua mão</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/person.svg" alt="Icon Description"></h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Saiba das melhores oportunidades</h5>
+                                </div>
+                                <p class="card-text text-muted text-center fix-font">Sempre seja notificado de oportunidades de mercado em tempo real</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body flex-grow-1">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="card-title card-title-my" style="color: #136779;"><img src="static/money_send.svg" alt="Icon Description"></h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title card-title-my" style="color: #136779;">Gestão prática dos seus ganhos</h5>
+                                </div>
+                                <p class="card-text text-muted text-center fix-font">Consiga ter total sobre seus lucros e ganhos, mensais, diários ou semanais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-feat">
+            <div class="container">
+                <div class="d-flex flex-column jusitfy-content-center align-items-center">
+                    <h2 class="text-center mt-4" id="h2-second-half">Diferenciais</h2>
+                    <p class="text-justify fourth-feat-text text-white mt-3">Nossos sistemas contam com tecnologias novas e <br> práticas para o uso no mercado de gestão financeira.</p>
+                    <div class="row row-cols-1 row-cols-md-2 g-5 mt-0">
+                        <div class="col">
+                            <div class="card h-100 d-flex flex-column align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-my mt-2">Open Banking</h5>
+                                    <p class="card-text fix-font text-muted">O Open Banking simplifica o acesso <br>a serviços financeiros, tornando as<br> transações e gestão de contas mais<br> convenientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 d-flex flex-column align-items-center">
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title card-title-my mt-2">Inteligência artificial</h5>
+                                    <p class="card-text fix-font text-muted">Nossos sistemas utilizam de IA para<br> múltiplas funções dentro do nosso<br> app, facilitando sua gestão,<br> planejamento e controle financeiro.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
