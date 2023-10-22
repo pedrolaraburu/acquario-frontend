@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 60vh;
+    height: 75vh;
 }
 
 #controle {
@@ -37,7 +37,7 @@
     background-attachment: fixed;
     background-position: center center;
     color: white; */
-    height: 40vh;
+    height: 50vh;
 }
 
 .text-second-half {
@@ -103,4 +103,23 @@
 #first-feat-cards:hover {
     background-color: #d4d4d4; 
     transition: background-color 0.3s ease; 
+}
+@media (max-width: 768px) {
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+body {
+    background-color: black;
 }
