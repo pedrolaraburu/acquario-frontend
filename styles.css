@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
-
+body {
+    background-color: black;
+}
 #titulo {
     color: var(--light-text-color, #FFF);
     font-family: Montserrat;
@@ -120,6 +122,118 @@
         height: auto;
     }
 }
-body {
-    background-color: black;
+
+
+@media (max-width: 812px) {
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+
+
+/* Default styles for all screen sizes */
+
+/* Small screens (576px and below) */
+@media (max-width: 576px) {
+    /* CSS styles for extra small screens */
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+
+/* Small screens (577px to 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+    /* CSS styles for small screens (tablets) */
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+
+/* Medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles for medium screens (small laptops and tablets in landscape) */
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+
+/* Large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS styles for large screens (desktops) */
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
+}
+
+/* Extra Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    /* CSS styles for extra large screens (large desktops) */
+    .first-feat {
+        height: 90vh; /* Adjust the height as needed */
+    }
+    .second-half {
+        margin-top: 20px; /* Add margin to push it down */
+        height: auto;
+    }
+    .third-feat {
+        height: auto;
+    }
+    .fourth-feat {
+        height: auto;
+    }
 }
